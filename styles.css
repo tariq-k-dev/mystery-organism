@@ -298,6 +298,17 @@ footer .copyright .year {
   font-size: 1.6rem;
 }
 
+footer .repo a {
+  color: rgba(23, 192, 235,1.0);
+  padding-bottom: 0.02rem;
+  text-decoration: none;
+  transition: 0.3s ease;
+}
+
+footer .repo a:hover {
+  color: rgba(126, 255, 245,1.0);
+}
+
 /* Media queries */
 @media only screen and (max-width: 600px) {
   header,
