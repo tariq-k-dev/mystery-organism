@@ -1,0 +1,352 @@
+@font-face {
+  font-display: swap;
+  font-family: "Inter";
+  src: local("Inter"), url("./fonts/Inter-VariableFont.ttf") format("truetype");
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html,
+body {
+  width: 100%;
+  min-height: 100%;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  background-color: rgba(39, 60, 117, 1);
+  background-image: url("./images/ocean-background.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  font-family: "Inter";
+  font-size: 1.6rem;
+}
+
+header,
+.button-container,
+.container {
+  width: 80%;
+  margin: 0 auto;
+}
+
+header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-image: url("./images/thermal-vent-2.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  width: 80%;
+  height: 16rem;
+  margin: 0 auto;
+  position: sticky;
+  top: 0;
+  z-index: 5;
+}
+
+.color-overlay {
+  background: linear-gradient(rgba(27, 20, 100, 0), rgba(27, 20, 100, 0.5));
+  position: absolute;
+  width: 100%;
+  min-height: 16rem;
+  height: 100%;
+  top: 0;
+  z-index: -10;
+}
+
+.heading-details {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  width: 100%;
+  height: 10rem;
+  margin: 0 auto;
+  z-index: 100;
+}
+
+.h1-heading {
+  font-size: 2.5rem;
+  font-weight: 400;
+  letter-spacing: 0.1rem;
+  line-height: 2.6rem;
+  padding: 1rem;
+  text-align: center;
+  max-width: fit-content;
+  overflow-wrap: break-word;
+}
+
+.button {
+  margin: 0 auto;
+  background-color: rgba(27, 20, 100, 1);
+  cursor: pointer;
+  border: 0.2rem solid rgba(10, 61, 98, 1);
+  border-radius: 0.8rem;
+  box-shadow: 0.1rem 0.1rem 0 rgba(10, 61, 98, 1);
+  color: rgba(255, 255, 255, 1);
+  font-family: inherit;
+  font-size: 1.4rem;
+  font-weight: 800;
+  height: 4rem;
+  letter-spacing: 0.2rem;
+  padding: 0.25rem 1rem;
+  width: fit-content;
+  margin: 0 auto 3rem;
+}
+
+/* h1 and button hover styles */
+a.top-link {
+  text-decoration: none;
+}
+
+.h1-heading,
+.button {
+  display: block;
+  backface-visibility: hidden;
+  background-color: rgba(27, 20, 100, 1);
+  cursor: pointer;
+  border: 0.2rem solid rgba(10, 61, 98, 1);
+  border-radius: 0.8rem;
+  box-shadow: 0.1rem 0.1rem 0 rgba(10, 61, 98, 1);
+  border-radius: 0.5rem;
+  color: rgba(255, 255, 255, 1);
+  font-weight: 800;
+  text-shadow: 0.1rem 0 0 rgba(0, 0, 0, 1);
+  transition: 0.2s ease-n-out;
+}
+
+.h1-heading {
+  width: fit-content;
+}
+
+.button {
+  width: 29rem;
+}
+
+.inner-text {
+  display: inline-block;
+  transition: all 0.2s ease-in-out;
+}
+
+.h1-heading:hover,
+.button:hover {
+  background-color: rgba(6, 82, 221, 1);
+}
+
+@media only screen and (max-width: 768px) {
+  .h1-heading:hover,
+  .button:hover {
+    background-color: rgba(27, 20, 100, 1);
+  }
+}
+
+.h1-heading:hover .inner-text {
+  transform: scale(1.01, 1.03);
+}
+
+.button:hover .inner-text {
+  transform: scale(1.02, 1.2);
+}
+
+.aequor-spacing {
+  display: inline-block;
+  margin-left: 0.05rem;
+}
+
+.container {
+  background-color: rgba(39, 60, 117, 1);
+  min-height: 100vh;
+  margin: 0 auto;
+}
+
+main {
+  width: 100%;
+}
+
+/* Specimens table */
+#specimens {
+  background-color: rgba(241, 242, 246, 1);
+  border-collapse: collapse;
+  font-family: inherit;
+  width: 100%;
+  min-height: 100%;
+  height: 100vh;
+  margin: 0 auto;
+  position: relative;
+}
+
+#specimens thead {
+  padding-top: 1.2rem;
+  padding-bottom: 1.2rem;
+  background-color: rgba(39, 60, 117, 1);
+  color: rgba(255, 255, 255, 1);
+  position: sticky;
+  top: 9rem;
+  height: 8rem;
+  z-index: 1000;
+}
+
+tr {
+  width: 100%;
+}
+
+#specimens tr:nth-of-type(2n) {
+  background-color: rgba(223, 230, 233, 1);
+}
+
+#specimens th {
+  background-color: rgba(39, 60, 117, 1);
+  color: rgba(255, 255, 255, 1);
+  font-size: 1.8rem;
+}
+
+#specimens th:nth-child(2) {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 8.3rem;
+}
+
+#specimens th:nth-child(2) {
+  border-left: 0.2rem solid rgba(222, 222, 222, 1);
+  border-right: 0.2rem solid rgba(222, 222, 222, 1);
+}
+
+#specimens td:nth-child(2) {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  width: 100%;
+  height: 8rem;
+  padding-left: 1rem;
+}
+
+#specimens td:nth-child(2) {
+  border-left: 0.2rem solid rgba(0, 0, 0, 1);
+  border-right: 0.2rem solid rgba(0, 0, 0, 1);
+}
+
+#specimens td span.border-left {
+  display: inline-block;
+  background-color: rgba(222, 222, 222, 1);
+  width: 0.2rem;
+  height: 100%;
+}
+
+#specimens td span.border-right {
+  display: inline-block;
+  background-color: rgba(222, 222, 222, 1);
+  width: 0.2rem;
+  height: 100%;
+}
+
+#specimens td,
+#specimens th {
+  font-weight: 600;
+  padding: 2rem 0.8rem;
+  width: calc(100% / 3);
+  text-align: center;
+}
+
+#specimens td {
+  font-size: 1.5rem;
+}
+
+#specimens td:nth-child(2),
+#specimens td:nth-child(3) {
+  text-align: left;
+}
+
+/* Footer */
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: rgba(255, 255, 255, 1);
+  width: 100%;
+  height: 5rem;
+}
+
+footer .author {
+  font-size: 1.1em;
+}
+
+footer .divider {
+  margin: 0 1rem;
+}
+
+footer .copyright {
+  font-size: 2.1rem;
+  font-weight: 200;
+  margin-right: 0.5rem;
+}
+
+footer .copyright .year {
+  font-size: 1.6rem;
+}
+
+/* Media queries */
+@media only screen and (max-width: 600px) {
+  header,
+  .button-container,
+  .container {
+    width: 100%;
+  }
+
+  .container {
+    padding: 0;
+    margin: 0;
+  }
+
+  header {
+    text-align: center;
+  }
+
+  #specimens th:nth-of-type(even) {
+    width: 100%;
+    height: 8.5rem;
+  }
+
+  @media (max-width: 480px) {
+    .heading-details {
+      justify-content: space-around;
+      gap: 0;
+    }
+  }
+
+  .h1-heading {
+    font-size: 1.5rem;
+  }
+
+  #specimens th {
+    font-size: 1.5rem;
+    line-height: 2.3rem;
+  }
+
+  #specimens th:last-of-type {
+    text-align: left;
+  }
+
+  #specimens td:first-of-type {
+    font-size: 1.4rem;
+    text-align: center;
+  }
+
+  #specimens td {
+    font-size: 1.2rem;
+    text-align: left;
+  }
+}
