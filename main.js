@@ -78,36 +78,6 @@ const pAequorFactory = (specimenNum, dna) => {
   };
 };
 
-// Create 30 instances of pAequor that can survive in their natural environment
-// Used to output to the console before creating integration in a web page
-// const TOTAL = 30;
-// const pAequorWillSurvive = [];
-// let specimenNum = 1;
-
-// while (pAequorWillSurvive.length < TOTAL) {
-//   const specimen = pAequorFactory(specimenNum, mockUpStrand());
-
-//   if (specimen.willLikelySurvive()) pAequorWillSurvive.push(specimen);
-//   specimenNum += 1;
-// }
-
-// console.log(
-//   "Likely to survive specimen list length:",
-//   pAequorWillSurvive.length
-// );
-// console.log("\nLikely to survive specimen list:");
-// pAequorWillSurvive.forEach((specimen, i) => {
-//   if (i === 0) console.log(`Specimen #${specimen.specimenNum} DNA Sequence:`);
-//   else console.log(`\nSpecimen #${specimen.specimenNum} DNA Sequence:`);
-//   console.log(specimen.dna);
-
-//   // Complimentary strand
-//   console.log(
-//     `Specimen #${specimen.specimenNum} Complimentary Strand Sequence:`
-//   );
-//   console.log(specimen.complementStrand());
-// });
-
 function generate30Specimens() {
   const TOTAL = 30;
   const pAequorWillSurvive = [];
