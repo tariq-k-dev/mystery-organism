@@ -1,3 +1,3 @@
-*.js linguist-detectable=40 linguist-language=JavaScript
-*.css linguist-detectable=35 linguist-language=CSS
-*.html linguist-detectable=25 linguist-language=HTML
+*.js linguist-detectable=40
+*.css linguist-detectable=35
+*.html linguist-detectable=25
