@@ -1,1 +1,3 @@
-*.css linguist-detectable=false
+*.js linguist-vendored=false linguist-language=JavaScript linguist-detectable=40
+*.css linguist-vendored=false linguist-language=CSS linguist-detectable=35
+*.html linguist-vendored=false linguist-language=HTML linguist-detectable=25
