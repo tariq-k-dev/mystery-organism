@@ -206,6 +206,17 @@ tr {
   background-color: rgba(223, 230, 233, 1);
 }
 
+#specimens td,
+#specimens th {
+  font-weight: 600;
+  padding: 2rem 0.8rem;
+  text-align: center;
+}
+
+#specimens td {
+  font-size: 1.5rem;
+}
+
 #specimens th {
   background-color: rgba(39, 60, 117, 1);
   color: rgba(255, 255, 255, 1);
@@ -237,18 +248,7 @@ tr {
 #specimens td:nth-child(2) {
   border-left: 0.2rem solid rgba(0, 0, 0, 1);
   border-right: 0.2rem solid rgba(0, 0, 0, 1);
-  height: 100%;
-}
-
-#specimens td,
-#specimens th {
-  font-weight: 600;
-  padding: 2rem 0.8rem;
-  text-align: center;
-}
-
-#specimens td {
-  font-size: 1.5rem;
+  min-height: 100%;
 }
 
 #specimens td:nth-child(2),
