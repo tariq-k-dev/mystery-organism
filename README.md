@@ -4,6 +4,6 @@ Uses JavaScript to randomly generate a fifteen DNA base pair sequence comprised 
 
 Browser local storage is used to persist the 30 generated DNA sequences. A new set of 30 organisms DNA can be generated using the <code>Generate <i>P .aequor</i> Sequences</code> button.
 
-Below is a screenshot of the codes resulting website:
+Below is a screenshot of the JavaScript code executed in the browser:
 
 [![Website screenshot](./images/website-screenshot.png)](https://tariq-k-dev.github.io/mystery-organism/)

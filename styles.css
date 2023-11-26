@@ -1,7 +1,7 @@
 @font-face {
   font-display: swap;
-  font-family: "Inter";
-  src: local("Inter"), url("./fonts/Inter-VariableFont.ttf") format("truetype");
+  font-family: 'Inter';
+  src: local('Inter'), url('./fonts/Inter-VariableFont.ttf') format('truetype');
 }
 
 *,
@@ -24,11 +24,11 @@ html {
 
 body {
   background-color: rgba(39, 60, 117, 1);
-  background-image: url("./images/ocean-background.jpg");
+  background-image: url('./images/ocean-background.jpg');
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  font-family: "Inter";
+  font-family: 'Inter';
   font-size: 1.6rem;
 }
 
@@ -44,7 +44,7 @@ header {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-image: url("./images/thermal-vent-2.jpg");
+  background-image: url('./images/thermal-vent-2.jpg');
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -145,7 +145,7 @@ a.top-link {
   background-color: rgba(6, 82, 221, 1);
 }
 
-@media only screen and (max-width: 768px) {
+@media screen and (max-width: 768px) {
   .h1-heading:hover,
   .button:hover {
     background-color: rgba(27, 20, 100, 1);
@@ -299,18 +299,18 @@ footer .copyright .year {
 }
 
 footer .repo a {
-  color: rgba(23, 192, 235,1.0);
+  color: rgba(23, 192, 235, 1);
   padding-bottom: 0.02rem;
   text-decoration: none;
   transition: 0.3s ease;
 }
 
 footer .repo a:hover {
-  color: rgba(126, 255, 245,1.0);
+  color: rgba(126, 255, 245, 1);
 }
 
 /* Media queries */
-@media only screen and (max-width: 600px) {
+@media screen and (max-width: 600px) {
   header,
   .button-container,
   .container {
@@ -345,9 +345,6 @@ footer .repo a:hover {
   #specimens th {
     font-size: 1.5rem;
     line-height: 2.3rem;
-  }
-
-  #specimens th:last-of-type {
     text-align: left;
   }
 
